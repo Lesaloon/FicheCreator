@@ -2,9 +2,9 @@
 
 	<div class="home">
 		<br>
-		<h1>LS createur de fiche</h1>
+		<h1>LS créateur de fiche</h1>
 		<p>
-			Ce site a pour vocation d'aider les étudiant pour crée leur fiche de révision en ligne 
+			Ce site a pour vocation d'aider les étudiants pour créer leur fiche de révision en ligne
 		</p>
 		<b-form>
 			<!-- matière -->
@@ -28,7 +28,7 @@
 				label="Chapitre : "
 				label-for="input-2"
 				>
-				<p class="left">Numero : </p>
+				<p class="left">Numéro : </p>
 				<b-form-input
 					id="input-2"
 					type="number"
@@ -50,14 +50,14 @@
 			<!-- problematique -->
 			<b-form-group
 				id="input-prob"
-				label="Problematique :"
+				label="Problématique :"
 				label-for="input-3"
 				description=""
 			>
 				<b-form-textarea
 					id="input-3"
 					v-model="form.problematique"
-					placeholder="La problematique"
+					placeholder="La problématique"
 				></b-form-textarea>
 			</b-form-group>
 			<!-- définition -->
@@ -91,7 +91,7 @@
 			<b-list-group v-for="(element, index) in form.définition" :key="'def'+index" class="left color">
 				<b-list-group-item>
 					{{element.mot}} : {{element.def}}
-					<b-button class="align-right" variant="danger" v-on:click="suprDef(index)">Suprimer</b-button>
+					<b-button class="align-right" variant="danger" v-on:click="suprDef(index)">Supprimer</b-button>
 					<br>
 					<span style="padding-left: 20px;" >EX : {{element.ex}}</span>
 				</b-list-group-item>
@@ -99,7 +99,7 @@
 			<!-- shema 
 			<b-form-group
 				id="input-5"
-				label="Shéma :"
+				label="Schéma :"
 				label-for="input-5"
 			>
 				<b-form-input
@@ -128,7 +128,7 @@
 			<b-list-group v-for="(element, index) in form.schema" :key="'shema'+index" class="left color">
 				<b-list-group-item>
 					{{element.link}} : {{element.type}}
-					<b-button class="align-right" variant="danger" v-on:click="suprShema(index)">Suprimer</b-button>
+					<b-button class="align-right" variant="danger" v-on:click="suprShema(index)">Supprimer</b-button>
 					<br>
 					<span style="padding-left: 20px;" >type : {{element.type}}</span>
 					
@@ -159,7 +159,7 @@
 			<b-list-group v-for="(element, index) in form.vocabulaire" :key="'vocabulaire'+index" class="left color">
 				<b-list-group-item>
 					{{element.mot}}
-					<b-button class="align-right" variant="danger" v-on:click="suprVoc(index)">Suprimer</b-button>
+					<b-button class="align-right" variant="danger" v-on:click="suprVoc(index)">Supprimer</b-button>
 					<br>
 					<span style="padding-left: 20px;" >{{element.signification}}</span>
 					
@@ -176,16 +176,16 @@
 				<b-form-textarea
 					id="input-6"
 					v-model="frommemory.proprieter.prop"
-					placeholder="Proprièter"
+					placeholder="Propriété"
 				></b-form-textarea>
 				<br>
-				<b-button v-on:click="addProp()" variant="success">Ajouter la proprieter</b-button>
+				<b-button v-on:click="addProp()" variant="success">Ajouter la propriété</b-button>
 			</b-form-group> 
 			<br>
 			<b-list-group v-for="(element, index) in form.proprieter" :key="'proprieter'+index" class="left color">
 				<b-list-group-item>
 					{{element.prop}}
-					<b-button class="align-right" variant="danger" v-on:click="suprProp(index)">Suprimer</b-button>
+					<b-button class="align-right" variant="danger" v-on:click="suprProp(index)">Supprimer</b-button>
 					
 				</b-list-group-item>
 			</b-list-group> <!-- proprieter Liste -->
@@ -223,7 +223,7 @@
 			<b-list-group v-for="(element, index) in form.document" :key="'doc'+index" class="left color">
 				<b-list-group-item>
 					Le Document {{element.doc}} page {{element.page}} : {{element.nom}}
-					<b-button class="align-right" variant="danger" v-on:click="suprDoc(index)">Suprimer</b-button>
+					<b-button class="align-right" variant="danger" v-on:click="suprDoc(index)">Supprimer</b-button>
 					<br>
 					
 				</b-list-group-item>
@@ -259,14 +259,14 @@
 			<li></li>
 			<li></li>
 		</ul>
-		<h3>Matiere</h3>
+		<h3>Matière</h3>
 		<h3>Définition</h3>
 		<ul>
 			<li></li>
 			<li></li>
 			<li></li>
 		</ul>
-		<h3>Problematique</h3>
+		<h3>Problématique</h3>
 		<ul>
 			<li></li>
 			<li></li>
@@ -382,7 +382,7 @@ export default {
 					{
 						ul: tempDef
 					},
-					{ text: `${tempShe.length > 0 ? "Schema : ": ""}`, style: 'problematique' },
+					{ text: `${tempShe.length > 0 ? "Schéma : ": ""}`, style: 'problematique' },
 					{
 						ul: tempShe
 					},/*
@@ -390,7 +390,7 @@ export default {
 					{
 						ul: tempVoc
 					},*/
-					{ text: `${tempProp.length > 0 ? "Proprièter : ": ""}`, style: 'problematique' },
+					{ text: `${tempProp.length > 0 ? "Propriété : ": ""}`, style: 'problematique' },
 					{
 						ul: tempProp
 					},
