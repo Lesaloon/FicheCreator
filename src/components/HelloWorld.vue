@@ -2,7 +2,7 @@
 	<div class="hello">
 		<h1>Lesaloon Fiche Creator</h1>
 		<p>
-			se site a pour vocation d'aider les étudiant pour crée leur fiche de révision en ligne 
+			se site à pour vocation d'aider les étudiants pour créer leur fiche de révision en ligne
 		</p>
 		<h3>Matiere</h3>
 		<ul>
@@ -12,7 +12,7 @@
 					type="text"
 					name="matiereInput"
 					id="MatInp"
-					placeholder="Histoire / Françai / Mathematique ..."
+					placeholder="Histoire / Français / Mathématique ...."
 					>
 			</li>
 		</ul>
@@ -22,14 +22,14 @@
 			<li></li>
 			<li></li>
 		</ul>
-		<h3>Matiere</h3>
+		<h3>Matière</h3>
 		<h3>Définition</h3>
 		<ul>
 			<li></li>
 			<li></li>
 			<li></li>
 		</ul>
-		<h3>Problematique</h3>
+		<h3>Problématique</h3>
 		<ul>
 			<li></li>
 			<li></li>
